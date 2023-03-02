@@ -3,7 +3,7 @@ import itertools
 import numpy as np
 import csv
 
-file = open('Juliet.txt', 'r')#Abrimos y leemos el archivo
+file = open('YOUR.txt', 'r')#Abrimos y leemos el archivo
 data = file.read()#Guardamos esta info en una variable
 
 Letras = string.printable #Creamos una variable con todos los caracteres ascii
@@ -62,7 +62,7 @@ for i in range (0, len(LetrasTres)):#Ciclo para encontrar la entropia de tercer 
 print(f'Entropia de un simbolo = {EntropiaUno}')#Obtenemos la entropia uno en terminal
 print(f'Entropia de Dos simbolos seguidos = {EntropiaDos} = {2*EntropiaUno}')#Obtenemos la entropía de segundo orden que debe ser igual a 2 veces la de primer orden
 print(f'Entropia de Tres simbolos seguidos = { EntropiaTres} = {3* EntropiaUno}')#Obtenemos la entropía de tercer orden que debe ser igual a 3 veces la de primer orden
-with open('French.csv', 'w') as file:#guardamos infomración en un escel
+with open('Nombre.csv', 'w') as file:#guardamos infomración en un escel
     writer = csv.writer(file)
     writer.writerow(Letras)#simbolos
     writer.writerow(Contador)#Veces que aparece
